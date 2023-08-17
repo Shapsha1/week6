@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/Comfortaa-Medium.ttf) format(truetype);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Medium.ttf) format(TrueType);
+    font-weight: 500;
+}
+
+* {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.38rem 5.19rem 4.13rem;
+    row-gap: 1.88rem;
+    justify-items: stretch;
+    padding: 1.88rem 4.38rem;
+}
+
+.header-nav {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin-left: 30.31%;
+}
+
+.little-nav {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-nav a {
+    cursor: url(../images/mingcute_hand-finger-line.svg), pointer;
+}
+
+.header-nav li:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#header-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    width: 47.5625rem;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 44.3125rem;
+    height: 3.6875rem;
+    padding: 1.0625rem 1.8125rem 1rem 1.28125rem;
+
+    border-radius: 1.25rem;
+    background: #efe1e1;
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-bar ::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 1.625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+}
+
+.header-address {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-address img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.big-nav {
+    font-family: Comfortaa;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main {
+    grid-area: main;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, min-content);
+    row-gap: 4.38rem;
+}
+
+#main-component {
+    background-color: #dadedf;
+    height: 28.1rem;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4.56rem 0 4.56rem;
+    align-items: center;
+}
+
+.section-headline {
+    margin-bottom: 3.75rem;
+
+    font-family: Comfortaa;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.show-all {
+    margin-top: 1.88rem;
+    align-self: flex-end;
+
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 0.63rem;
+    height: 29.1875rem;
+}
+
+.card-description {
+    align-self: stretch;
+    text-align: center;
+
+    color: #000;
+
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-text {
+    width: 13.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.price {
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.in-basket {
+    display: flex;
+    padding: 0.9375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+
+    border: none;
+    border-radius: 1.25rem;
+    background: #b49696;
+
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.wide-card {
+    height: auto;
+}
+
+.wide-card .card-text {
+    width: 18.625rem;
+}
+
+.categories-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+    align-items: center;
+}
+
+.categories-row {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-row {
+    gap: 4.69rem;
+}
+
+.second-row {
+    gap: 7.75rem;
+}
+
+.first-row .category:nth-of-type(1) {
+    background-color: #f3e494;
+}
+
+.first-row .category:nth-of-type(2) {
+    background-color: #f3c2c2;
+}
+
+.first-row .category:nth-of-type(3) {
+    background-color: #b6f4ab;
+}
+
+.first-row .category:nth-of-type(4) {
+    background-color: rgba(145, 250, 250, 0.5);
+}
+
+.second-row .category:nth-of-type(1) {
+    background-color: #94aff3;
+}
+
+.second-row .category:nth-of-type(2) {
+    background-color: #db94f3;
+}
+
+.second-row .category:nth-of-type(3) {
+    background-color: #f394a0;
+}
+
+.category {
+    width: 14.875rem;
+    height: 7.4375rem;
+    padding: 0rem 2.0625rem 0rem 2.125rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1.25rem;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: url(../images/Vector.png), pointer;
+}
+
+.brands-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 17rem);
+    grid-auto-rows: min-content;
+    justify-content: center;
+    column-gap: 1.88rem;
+}
+
+.brands-container img {
+    cursor: url(../images/Vector.png), pointer;
+}
+
+.about-shop {
+    padding: 4.375rem 32rem;
+
+    background: linear-gradient(135deg, #b49696 0.26%, #cfb9b9 46.15%, #d5c0c0 56.56%, #efe1e1 100%);
+}
+
+.about-shop .section-headline {
+    color: #fff;
+}
+
+.text-block {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 13.0625rem;
+}
+
+.left-text-block {
+    width: 20.25rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.right-text-block {
+    width: 22.75rem;
+
+    display: flex;
+    align-items: center;
+
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.left-text-block img {
+    width: 300px;
+    height: 66px;
+}
+
+.footer {
+    grid-area: footer;
+
+    display: flex;
+    padding: 3.75rem 17.1875rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+
+    border-radius: 20px;
+    background: #efe1e1;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+
+    font-family: Comfortaa;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.25rem;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copyright {
+    align-self: flex-start;
+
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
